@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.warning{
+    text-align: center;
+    background-color: darkgoldenrod;
+    color: black;
+    font-size: 14px;
+}
+
+header{
+    height: 100px;
+}
+
+header iframe{
+    width: 100%;
+}
+
+section{
+    margin-top: 0;
+}
+
+.main{
+    width: 100%;
+    display: block;
+    height: 400px;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+.mainImage{
+    position: absolute;
+    opacity: 25%;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+.mainText{
+    position: absolute;
+    color: white;
+    width: 100%;
+    font-size: 48px;
+    text-align: center;
+    padding: 300px 0px 0px 0px;
+}
+
+
+.cerro{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-color: aquamarine;
+}
+.cerroImg{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cerroImg > img {
+    width: 100%;
+    height: auto;
+}
+.cerroText{
+    padding: 110px 30px;
+}
+
+
+.titleText{
+    font-size: 48px;
+    font-weight: bold;
+}
+.infoBtn{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    align-content: center;
+}
+.btnIcon{
+    font-size: 26px;
+    padding: 0px 0px 10px 0px;
+}
+.btnText{
+    font-size: 18px;
+}
+
+
+.jua{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-color: aquamarine;
+}
+.juaText{
+    padding: 110px 30px;
+    text-align: right;
+    justify-content: end;
+}
+.juaImg{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.juaImg > img {
+    width: 100%;
+    height: auto;
+}
+
+
+.blas{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-color: aquamarine;
+}
+.blasImg{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.blasImg > img{
+    width: 100%;
+    height: auto;
+    margin: -110px 0px 0px 0px;
+    cursor: pointer;
+}
+.blasText{
+    padding: 110px 30px;
+}
+
+
+.jiqui{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-color: aquamarine;
+}
+.jiquiText{
+    padding: 110px 30px;
+    text-align: right;
+    justify-content: end;
+}
+.jiquiImg{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.jiquiImg > img {
+    width: 100%;
+    height: auto;
+    margin: -75px 0px 0px 0px;
+}
+
+
+.volcan{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-color: aquamarine;
+}
+.volcanImg{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.volcanImg > img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.volcanText{
+    padding: 110px 30px;
+}
+
+
+footer iframe{
+    width: 100%;
+}
+
+@media screen and (max-width: 1359px) {
+    .warning{
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    .warning{
+        display: none;
+    }
+}

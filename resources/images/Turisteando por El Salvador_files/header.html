@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://127.0.0.1:5500/resources/html/header.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .main-grid{
+            display: grid;
+            grid-template-columns: 18% 80% 2%;
+            align-content: center;
+            background: indianred;
+            height: 100px;
+        }
+        .logo{
+            line-height: auto;
+            padding: 0 20px;
+        }
+        .navBar{
+            background-color: cornflowerblue;
+            grid-column-start: 2;
+            width: 100%;
+            z-index: 100;
+        }
+        .navBar nav ul{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            align-content: center;
+            list-style: none;
+            overflow: hidden;
+        }
+        .navBar nav ul li{
+            float: left;
+        }
+        .navBar ul li a{
+            color: black;
+            display: block;
+            padding: 20px;
+            height: 100%;
+        }
+        .navBar ul li a:link{
+            text-decoration: none;
+        }
+        .navBar ul li a:hover{
+            background-color: darkgreen;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-grid">
+        <div class="logo">
+            <h3>Turisteando por</h3>
+            <h1>El Salvador</h1>
+        </div>
+        <div class="navBar">
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/resources/html/header.html">🏠 Pagina Principal</a></li>
+                    <li><a href="http://127.0.0.1:5500/resources/html/header.html">Cerro Verde</a></li>
+                    <li><a href="http://127.0.0.1:5500/resources/html/header.html">Juayua</a></li>
+                    <li><a href="http://127.0.0.1:5500/resources/html/header.html">Playa San Blas</a></li>
+                    <li><a href="http://127.0.0.1:5500/resources/html/header.html">Bahia del Jiquilisco</a></li>
+                    <li><a href="http://127.0.0.1:5500/resources/html/header.html">Volcán Chaparrastique</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
