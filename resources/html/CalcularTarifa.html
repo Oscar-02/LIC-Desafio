@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juayua | Turisteando por El Salvador</title>
-    <link rel="stylesheet" href="../css/juayua.css">
+    <title>Tarifas | Turisteando por El Salvador</title>
+    <link rel="stylesheet" href="../css/CalcularTarifa.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-danger p-5">
         <div class="container-fluid">
             <a class="navbar-brand">Turisteando por El Salvador</a>
@@ -47,52 +48,52 @@
         </div>
     </nav>
 </head>
-
 <body>
-    <section>
-        <div class="main">
-            <img class="mainImage" src="../images/Juayua/Juayua5.jpg">
-            <span class="mainText">Juayua</span>
-        </div>
-    </section>
-    <section>
-        <div class="part1">
-            <div class="img1">
-                <img src="../images/Juayua/Juayua1.jpg">
+    <div class="main-Items">
+        <div class="prices">
+            <div class="contain">
+                <div class="precio">
+                    $19.50
+                </div>
+                <div class="descripcion">
+                    <h3 style="text-align: center;">Tarifa Individual</h3>
+                    <ul>
+                        <li>Escoge tu destino, nosotros te llevamos.</li>
+                        <li>Trasporte incluido, tu presencia es mas que suficiente.</li>
+                        <li>Almuerzo ya incluido en restaurante seleccionado.</li>
+                    </ul>
+                </div>
             </div>
-            <p>
-                Juayúa es un municipio del departamento de Sonsonate, en El Salvador. Se encuentra a 63 kilómetros de distancia de la capital, San Salvador. Juayúa forma parte de la travesía por la cordillera de Apaneca-Lamatepec entre los departamentos de Ahuachapán y Sonsonate, mejor conocida como “La ruta de las flores”. El clima en esta zona del país es bastante variado, generalmente predomina el clima tropical en la mayor época del año, en el resto tiende a poseer un clima fresco, acompañado días nublados, lluvias y mucho viento. 
-            </p>
-        </div>
-    </section>
-    <section class="info">
-        <div class="background">
-        </div>
-        <div class="resumen">
-            <div>
-                <p>
-                    Juayúa es un sitio generalmente acompañado de una gastronomía común en todo el país, sin embargo, existen distintos platillos o botanas típicas de la zona. Se recomienda viajar a Juayúa los fines de semana, ya que todos los fines de semanas del año están acompañados de un festival gastronómico en la zona central de este municipio, en este se 
-                </p>
-            </div>
-            <div>
-                <p>
-                    pueden degustar distintos platillos nacionales e internacionales, desde pupusas hasta platillos menos comunes como conejo o pelibuey asado. Con una gran variedad de platillos, es un excelente sitio turístico para saciar el hambre y probar platillos nuevos o con una sazón distintiva de la zona.
-                </p>
+            <div class="contain">
+                <div class="precio" style="background-color:coral;">
+                    $19.50<br><span style="font-size: 20px;">15% descuento</span>
+                </div>
+                <div class="descripcion">
+                    <h3 style="text-align: center;">Tarifa Grupal (15 personas o mas)</h3>
+                    <ul>
+                        <li>Mismos beneficios que la tarifa individual, ademas...</li>
+                        <li>Trasporte privado, tus personas cercanas disfrutaran la comodidad y ambiente.</li>
+                        <li>Almuerzo incluido en mesas separadas o conjuntas, a preferencia del representante.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>
-    <section>
-        <div class="images">
-            <div class="ppt1">
-                <img src="../images/Juayua/Juayua2.jpg">
-            </div>
-            <div class="ppt2">
-                <img src="../images/Juayua/Juayua4.jpg">
+        <div class="tarifario">
+            <div class="contenido">
+                <h2>Calculadora de Precios</h2>
+                <div class="form">
+                    <label for="peopleBox"># de personas:</label>
+                    <input type="number" name="Personas" id="peopleBox" value="0" width="32px" min="0">
+                    <button type="submit" onclick="onClick()">Calcular Tarifa</button>
+                </div>
+                <h3 id="result">Valor desconocido</h3>
             </div>
         </div>
-    </section>
-    <footer>
-        <iframe src="footer.html" style="border-style: none;"></iframe>
-    </footer>
+    </div>
+    <script defer src="../js/CalcularTarifa.js"></script>
+</section>
+<footer>
+    <iframe src="footer.html" style="border-style: none;"></iframe>
+</footer>
 </body>
 </html>

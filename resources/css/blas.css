@@ -6,13 +6,6 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.warning{
-    text-align: center;
-    background-color: darkgoldenrod;
-    color: black;
-    font-size: 14px;
-}
-
 header{
     height: 100px;
 }
@@ -97,10 +90,11 @@ section{
     position: static;
     grid-template-columns: 50% 50%;
     height: 500px;
+    background-color: darksalmon;
 }
 .ppt1{
     padding: 40px;
-    height: 500px;
+    height: 450px;
     overflow: hidden;
 }
 .ppt1 > img{
@@ -108,14 +102,14 @@ section{
     height: auto;
 }
 .ppt2{
-    padding: 40px;
+    padding: 150px;
     height: 500px;
     overflow: hidden;
 }
 .ppt2 > img{
     width: 100%;
     height: auto;
-    margin: -120px 0px 0px 0px;
+    margin: -120px 20px 0px 0px;
 }
 
 
@@ -123,13 +117,106 @@ footer iframe{
     width: 100%;
 }
 
-@media screen and (max-width: 1359px) {
-    .warning{
+/*ESTILO PARA CELULARES*/
+@media screen and (max-width: 480px){
+    .part1 > p {
+        font-size: 15px;
     }
-}
 
-@media screen and (min-width: 1360px) {
-    .warning{
-        display: none;
+    p {
+        font-size: 12px;
+    }
+
+    .part1{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        min-height: 350px;
+        background-color: darksalmon;
+    }
+
+    .img1 > img{
+        height: 150px;
+        width: 250px;
+        margin: 20px 0px 0px 35px;
+    }
+
+    .mainImage {
+        display: grid;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .mainText{
+        position: absolute;
+        color: white;
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+        padding: 195px 0px 0px 0px;
+    }
+
+    .images {
+        grid-template-columns: 100%;
+        background-color: darksalmon;
+        padding: 0px 0px 0px 0px ;
+    }
+
+    .ppt1 {
+        padding: 0%;
+        margin: 10px 10px 10px 10px;
+        height: 230px;
+    }
+
+    .ppt2 {
+        padding: 0px;
+        margin: 0px 10px 0px 10px;
+        height: 300px;
+    }
+
+    .part1 > p {
+        font-size: 10px;
+        padding: 5%;
+    }
+}   
+
+/*ESTILO PARA TABLETS*/
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .part1{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        min-height: 350px;
+        background-color: darksalmon;
+    }
+
+    .img1 > img{
+        height: 300px;
+        width: 250px;
+        margin: 7.5% 50% 50% 20%;
+    }
+
+    .part1 > p{
+        padding: 15px 15px;
+        font-size: 16px;
+    }
+
+    .ppt1 {
+        padding: 0%;
+        margin: 100px 10px 10px 10px;
+        height: 400px;
+    }
+
+    .ppt2 {
+        padding: 0%;
+        margin: 10px 10px 10px 10px;
+        height: 400px;
+    }
+
+    .images {
+        grid-template-columns: 50% 50%;
+        background-color: darksalmon;
+        padding: 0px;
+        height: 400px;
     }
 }

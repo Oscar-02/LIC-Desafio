@@ -6,23 +6,9 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.warning{
-    text-align: center;
-    background-color: darkgoldenrod;
-    color: black;
-    font-size: 14px;
-}
-
-header{
-    height: 100px;
-}
-
-header iframe{
-    width: 100%;
-}
-
 section{
     margin-top: 0;
+    min-height: 300px;
 }
 
 .main{
@@ -198,13 +184,180 @@ footer iframe{
     width: 100%;
 }
 
-@media screen and (max-width: 1359px) {
-    .warning{
+/*ESTILO PARA CELULARES*/
+@media screen and (max-width: 480px) {
+    .mainText{
+        position: absolute;
+        color: white;
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+        padding: 195px 0px 0px 0px;
+    }
+
+    .cerroText{
+        color: black;
+        text-align: center;
+        padding: 130px 0px 0px 0px;
+    }
+
+    .titleText{
+        font-size: 20px;
+    }
+
+    .btnText{
+        color: black;
+        text-align: center;
+    }
+
+    .mainImage{
+        display: grid;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .cerro{
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+        height: 150px;
+        width: 100%;
+        position: relative;
+        background-color: aquamarine;
+        padding: 40px 0px 0px 0px;
+    }
+
+    .jua {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+        height: 150px;
+        width: 100%;
+        position: relative;
+        background-color: aquamarine;
+        padding: -100px 0px 0px 0px;
+    }
+
+    .juaText {
+        color: black;
+        text-align: center;
+        padding: 234px 0px 0px 0px;
+    }
+
+    .blas {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+        height: 150px;
+        width: 100%;
+        position: relative;
+        background-color: aquamarine;
+        padding:  50px 0px 0px 0px;
+    }
+
+    .blasImg {
+        width: 125%;
+        height: 1000px;
+    }
+
+    .blasText {
+        color: black;
+        text-align: center;
+        padding: 115px 0px 0px 0px;
+    }
+
+    .jiqui {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+        height: 110px;
+        width: 100%;
+        position: relative;
+        background-color: aquamarine;
+        padding:  0px 0px 0px 0px;
+    }
+
+    .jiquiText {
+        color: black;
+        text-align: center;
+        padding: 220px 0px 0px 0px;
+    }
+
+.volcan {
+    display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+        height: 100px;
+        width: 100%;
+        position: relative;
+        background-color: aquamarine;
+        padding:  60px 0px 0px 0px;
+}
+
+.volcanImg {
+    margin: 0%;
+    padding: 0px 0px 0px 0px ;
+}
+
+.volcanText{
+    color: black;
+        text-align: center;
+        padding: 205px 0px 0px 0px;
+}
+}
+
+
+/*ESTILO PARA TABLETS*/
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .cerroImg > img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .cerroText {
+        margin: 0px 0px 0px 0px;
+        padding: 100px 0px 0px 100px ;
+    }
+
+    .juaImg > img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .juaText {
+        margin: 0px 0px 0px 0px;
+        padding: 100px 100px 0px 0px ;
+    }
+
+    .blasImg > img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .blasText {
+        margin: 0px 0px 0px 0px;
+        padding: 70px 0px 0px 100px ;
+    }
+
+    .jiquiImg > img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .jiquiText {
+        margin: 0px 0px 0px 0px;
+        padding: 65px 100px 0px 0px ;
+    }
+
+    .volcanImg > img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .volcanText {
+        margin: 0px 0px 0px 0px;
+        padding: 70px 0px 0px 40px ;
     }
 }
 
-@media screen and (min-width: 1360px) {
-    .warning{
-        display: none;
-    }
-}
